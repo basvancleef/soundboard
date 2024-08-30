@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm run generate-files && nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "generate-files": "npx tsc scripts/generateFileList.ts && node scripts/generateFileList.js",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/ui": "^2.17.0",
+    "nuxt": "^3.12.4"
+  },
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
+}

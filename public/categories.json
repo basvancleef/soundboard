@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Markt Duitsland",
+        "slug": "markt-duitsland"
+    },
+    {
+        "id": 2,
+        "name": "Test Geluiden",
+        "slug": "test-geluiden"
+    }
+]

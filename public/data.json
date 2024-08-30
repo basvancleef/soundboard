@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "name": "Markt Duitsland",
+        "slug": "markt-duitsland",
+        "sounds": [
+            {
+                "id": 1,
+                "name": "airhorn",
+                "file": "airhorn.mp3"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Test Geluiden",
+        "slug": "test-geluiden",
+        "sounds": [
+            {
+                "id": 1,
+                "name": "5-tonige-luchthoorn.",
+                "file": "5-tonige-luchthoorn..mp3"
+            },
+            {
+                "id": 2,
+                "name": "aftellen-vanaf-10",
+                "file": "aftellen-vanaf-10.mp3"
+            },
+            {
+                "id": 3,
+                "name": "aftellen-vanaf-3",
+                "file": "aftellen-vanaf-3.mp3"
+            },
+            {
+                "id": 4,
+                "name": "aftellen-vanaf-5",
+                "file": "aftellen-vanaf-5.mp3"
+            },
+            {
+                "id": 5,
+                "name": "airhorn",
+                "file": "airhorn.mp3"
+            },
+            {
+                "id": 6,
+                "name": "alles-op-tilt",
+                "file": "alles-op-tilt.mp3"
+            },
+            {
+                "id": 7,
+                "name": "alweer-een-winnaar",
+                "file": "alweer-een-winnaar.mp3"
+            },
+            {
+                "id": 8,
+                "name": "begin-attractie",
+                "file": "begin-attractie.mp3"
+            },
+            {
+                "id": 9,
+                "name": "grijpers",
+                "file": "grijpers.mp3"
+            },
+            {
+                "id": 10,
+                "name": "vogeltjesdans",
+                "file": "vogeltjesdans.mp3"
+            }
+        ]
+    }
+]
