@@ -23,11 +23,14 @@ function generateJsonFiles() {
         var categoryPath = path.join(soundsDir, categoryDir);
         if (fs.statSync(categoryPath).isDirectory()) {
             var soundFiles = fs.readdirSync(categoryPath);
-            var sounds = soundFiles.map(function (soundFile, soundIndex) { return ({
-                id: soundIndex + 1,
-                name: path.parse(soundFile).name,
-                file: soundFile,
-            }); });
+            var sounds = soundFiles.map(function (soundFile, soundIndex) {
+                var newName = soundFile.replace(/[_-]/g, ' ');
+                return {
+                    id: soundIndex + 1,
+                    name: path.parse(newName).name,
+                    file: soundFile,
+                };
+            });
             var category = {
                 id: categoryIndex + 1,
                 name: categoryDir,

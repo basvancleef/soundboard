@@ -47,11 +47,14 @@ function generateJsonFiles() {
     if (fs.statSync(categoryPath).isDirectory()) {
       const soundFiles = fs.readdirSync(categoryPath);
 
-      const sounds: Sound[] = soundFiles.map((soundFile, soundIndex) => ({
-        id: soundIndex + 1,
-        name: path.parse(soundFile).name,
-        file: soundFile,
-      }));
+      const sounds: Sound[] = soundFiles.map((soundFile, soundIndex) => {
+        const newName = soundFile.replace(/[_-]/g, ' ');
+        return {
+          id: soundIndex + 1,
+          name: path.parse(newName).name,
+          file: soundFile,
+        };
+      });
 
       const category: Category = {
         id: categoryIndex + 1,
