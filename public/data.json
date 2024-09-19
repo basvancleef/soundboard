@@ -1,70 +1,259 @@
 [
     {
         "id": 1,
-        "name": "Markt Duitsland",
-        "slug": "markt-duitsland",
+        "name": "Muziek",
+        "slug": "muziek",
         "sounds": [
             {
                 "id": 1,
-                "name": "airhorn",
-                "file": "airhorn.mp3"
+                "name": "GRIJPERS",
+                "file": "GRIJPERS.mp3"
+            },
+            {
+                "id": 2,
+                "name": "LIKE TO MOVE IT",
+                "file": "LIKE_TO_MOVE_IT.mp3"
+            },
+            {
+                "id": 3,
+                "name": "SUPERGEIL",
+                "file": "SUPERGEIL.mp3"
+            },
+            {
+                "id": 4,
+                "name": "TSUNAMI",
+                "file": "TSUNAMI.mp3"
+            },
+            {
+                "id": 5,
+                "name": "TURBO",
+                "file": "TURBO.mp3"
+            },
+            {
+                "id": 6,
+                "name": "VOGELTJESDANS",
+                "file": "VOGELTJESDANS.mp3"
+            },
+            {
+                "id": 7,
+                "name": "YMCA",
+                "file": "YMCA.mp3"
             }
         ]
     },
     {
         "id": 2,
-        "name": "Test Geluiden",
-        "slug": "test-geluiden",
+        "name": "Polka",
+        "slug": "polka",
         "sounds": [
             {
                 "id": 1,
-                "name": "5-tonige-luchthoorn.",
-                "file": "5-tonige-luchthoorn..mp3"
+                "name": "ROSI POLKA",
+                "file": "ROSI POLKA.mp3"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Sound Effects",
+        "slug": "sound-effects",
+        "sounds": [
+            {
+                "id": 1,
+                "name": "20TH CENTURY FOX",
+                "file": "20TH CENTURY FOX.mp3"
             },
             {
                 "id": 2,
-                "name": "aftellen-vanaf-10",
-                "file": "aftellen-vanaf-10.mp3"
+                "name": "AIRHORN",
+                "file": "AIRHORN.mp3"
             },
             {
                 "id": 3,
-                "name": "aftellen-vanaf-3",
-                "file": "aftellen-vanaf-3.mp3"
+                "name": "ALLES OP TILT",
+                "file": "ALLES OP TILT.mp3"
             },
             {
                 "id": 4,
-                "name": "aftellen-vanaf-5",
-                "file": "aftellen-vanaf-5.mp3"
+                "name": "BRANDWEER 2",
+                "file": "BRANDWEER 2.mp3"
             },
             {
                 "id": 5,
-                "name": "airhorn",
-                "file": "airhorn.mp3"
+                "name": "BRANDWEER",
+                "file": "BRANDWEER.mp3"
             },
             {
                 "id": 6,
-                "name": "alles-op-tilt",
-                "file": "alles-op-tilt.mp3"
+                "name": "CLAXON",
+                "file": "CLAXON.mp3"
             },
             {
                 "id": 7,
-                "name": "alweer-een-winnaar",
-                "file": "alweer-een-winnaar.mp3"
+                "name": "EINDE RIT",
+                "file": "EINDE RIT.mp3"
             },
             {
                 "id": 8,
-                "name": "begin-attractie",
-                "file": "begin-attractie.mp3"
+                "name": "GAME OVER",
+                "file": "GAME OVER.mp3"
             },
             {
                 "id": 9,
-                "name": "grijpers",
-                "file": "grijpers.mp3"
+                "name": "GONG",
+                "file": "GONG.mp3"
             },
             {
                 "id": 10,
-                "name": "vogeltjesdans",
-                "file": "vogeltjesdans.mp3"
+                "name": "HOORN 1",
+                "file": "HOORN 1.mp3"
+            },
+            {
+                "id": 11,
+                "name": "HOORN 2",
+                "file": "HOORN 2.mp3"
+            },
+            {
+                "id": 12,
+                "name": "HOORN 3",
+                "file": "HOORN 3.mp3"
+            },
+            {
+                "id": 13,
+                "name": "HOORN 4",
+                "file": "HOORN 4.mp3"
+            },
+            {
+                "id": 14,
+                "name": "KLAXON",
+                "file": "KLAXON.mp3"
+            },
+            {
+                "id": 15,
+                "name": "KOEBEL",
+                "file": "KOEBEL.mp3"
+            },
+            {
+                "id": 16,
+                "name": "LASER 1",
+                "file": "LASER 1.mp3"
+            },
+            {
+                "id": 17,
+                "name": "LASER 2",
+                "file": "LASER 2.mp3"
+            },
+            {
+                "id": 18,
+                "name": "LASER 3",
+                "file": "LASER 3.mp3"
+            },
+            {
+                "id": 19,
+                "name": "LUCHTHOORN 5",
+                "file": "LUCHTHOORN 5.mp3"
+            },
+            {
+                "id": 20,
+                "name": "LUCHTHOORN",
+                "file": "LUCHTHOORN.mp3"
+            },
+            {
+                "id": 21,
+                "name": "MULTILASER",
+                "file": "MULTILASER.mp3"
+            },
+            {
+                "id": 22,
+                "name": "SIRENE",
+                "file": "SIRENE.mp3"
+            },
+            {
+                "id": 23,
+                "name": "START 2",
+                "file": "START 2.mp3"
+            },
+            {
+                "id": 24,
+                "name": "START 3",
+                "file": "START 3.mp3"
+            },
+            {
+                "id": 25,
+                "name": "START 4",
+                "file": "START 4.mp3"
+            },
+            {
+                "id": 26,
+                "name": "START",
+                "file": "START.mp3"
+            },
+            {
+                "id": 27,
+                "name": "STOOMBOOT",
+                "file": "STOOMBOOT.mp3"
+            },
+            {
+                "id": 28,
+                "name": "TOETER",
+                "file": "TOETER.mp3"
+            },
+            {
+                "id": 29,
+                "name": "TOUR DE FRANCE",
+                "file": "TOUR DE FRANCE.mp3"
+            },
+            {
+                "id": 30,
+                "name": "TUUT TUUT",
+                "file": "TUUT_TUUT.mp3"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Spraak",
+        "slug": "spraak",
+        "sounds": [
+            {
+                "id": 1,
+                "name": "ALWEER EEN WINNAAR",
+                "file": "ALWEER EEN WINNAAR.mp3"
+            },
+            {
+                "id": 2,
+                "name": "ATTENTION",
+                "file": "ATTENTION.mp3"
+            },
+            {
+                "id": 3,
+                "name": "COUNT 10",
+                "file": "COUNT 10.mp3"
+            },
+            {
+                "id": 4,
+                "name": "COUNT 3",
+                "file": "COUNT 3.mp3"
+            },
+            {
+                "id": 5,
+                "name": "COUNT 5",
+                "file": "COUNT 5.mp3"
+            },
+            {
+                "id": 6,
+                "name": "HERE WE GO",
+                "file": "HERE WE GO.mp3"
+            },
+            {
+                "id": 7,
+                "name": "KAARTJES KASSA",
+                "file": "KAARTJES KASSA.mp3"
+            },
+            {
+                "id": 8,
+                "name": "LETS GO",
+                "file": "LETS GO.mp3"
             }
         ]
     }

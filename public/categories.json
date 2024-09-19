@@ -1,12 +1,22 @@
 [
     {
         "id": 1,
-        "name": "Markt Duitsland",
-        "slug": "markt-duitsland"
+        "name": "Muziek",
+        "slug": "muziek"
     },
     {
         "id": 2,
-        "name": "Test Geluiden",
-        "slug": "test-geluiden"
+        "name": "Polka",
+        "slug": "polka"
+    },
+    {
+        "id": 3,
+        "name": "Sound Effects",
+        "slug": "sound-effects"
+    },
+    {
+        "id": 4,
+        "name": "Spraak",
+        "slug": "spraak"
     }
 ]
