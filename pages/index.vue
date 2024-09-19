@@ -3,13 +3,15 @@
     <div class="flex mb-5 justify-between items-center">
       <div class="flex flex-col">
         <h1>Overzicht</h1>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>Selecteer een categorie</p>
       </div>
-      <UButton
-        class="h-max"
-        icon="i-heroicons-plus"
-        to="https://ui.nuxt.com"
-      />
+      <!--      <UButton-->
+      <!--        class="h-max"-->
+      <!--        icon="i-heroicons-plus"-->
+      <!--        color="black"-->
+      <!--        sr-only="Voeg een categorie toe"-->
+      <!--        :disabled="true"-->
+      <!--      />-->
       <!--      <ColorScheme>-->
       <!--        <USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']"/>-->
       <!--      </ColorScheme>-->
@@ -35,10 +37,4 @@
 
 <script setup lang="ts">
 import categories from 'public/categories.json';
-
-// const categories = ref([
-//   {name: 'Markt Duitsland 🇩🇪', slug: 'markt-duitsland'},
-//   {name: 'Markt Nederland 🇳🇱', slug: 'markt-nederland'},
-//   {name: 'Sounds 🔉', slug: 'sounds'},
-// ]);
 </script>
