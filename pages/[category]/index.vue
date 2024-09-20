@@ -20,7 +20,8 @@
       <UCard
         v-for="(sound, index) in category?.sounds"
         :key="index"
-        :class="getColor(index)"
+        :class="[getColor(index), (isPlaying && playingSound?.name !== sound.name ? 'cursor-not-allowed' : 'cursor-pointer')]"
+        @click="playSound(sound)"
       >
         <div class="w-full flex flex-col items-center justify-center">
           <div class="relative">

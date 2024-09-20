@@ -17,21 +17,22 @@
       <!--      </ColorScheme>-->
     </div>
 
-    <UCard
+    <NuxtLink
       v-for="category in categories"
       :key="category.name"
-      class="mt-4"
+      :to="category.slug"
     >
+    <UCard class="mt-4">
       <div class="w-full flex items-center justify-between">
         <h2>{{ category.name }}</h2>
         <UButton
           class="rounded-full rotate-[45deg]"
           icon="i-heroicons-arrow-up"
           color="white"
-          :to="category.slug"
         />
       </div>
     </UCard>
+    </NuxtLink>
   </UContainer>
 </template>
 
