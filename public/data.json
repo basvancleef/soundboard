@@ -1,6 +1,78 @@
 [
     {
-        "id": 1,
+        "id": 2,
+        "name": "Favorieten",
+        "slug": "favorieten",
+        "sounds": [
+            {
+                "id": 1,
+                "name": "AIRHORN",
+                "file": "AIRHORN.mp3"
+            },
+            {
+                "id": 2,
+                "name": "ALLES OP TILT",
+                "file": "ALLES OP TILT.mp3"
+            },
+            {
+                "id": 3,
+                "name": "ALWEER EEN WINNAAR",
+                "file": "ALWEER EEN WINNAAR.mp3"
+            },
+            {
+                "id": 4,
+                "name": "ATTENTION",
+                "file": "ATTENTION.mp3"
+            },
+            {
+                "id": 5,
+                "name": "BRANDWEER 2",
+                "file": "BRANDWEER 2.mp3"
+            },
+            {
+                "id": 6,
+                "name": "COUNT 10",
+                "file": "COUNT 10.mp3"
+            },
+            {
+                "id": 7,
+                "name": "HOORN 3",
+                "file": "HOORN 3.mp3"
+            },
+            {
+                "id": 8,
+                "name": "KAARTJES KASSA",
+                "file": "KAARTJES KASSA.mp3"
+            },
+            {
+                "id": 9,
+                "name": "LINKS RECHTS",
+                "file": "LINKS RECHTS.mp3"
+            },
+            {
+                "id": 10,
+                "name": "SUPERGEIL",
+                "file": "SUPERGEIL.mp3"
+            },
+            {
+                "id": 11,
+                "name": "TOETER",
+                "file": "TOETER.mp3"
+            },
+            {
+                "id": 12,
+                "name": "TSUNAMI",
+                "file": "TSUNAMI.mp3"
+            },
+            {
+                "id": 13,
+                "name": "VOGELTJESDANS",
+                "file": "VOGELTJESDANS.mp3"
+            }
+        ]
+    },
+    {
+        "id": 3,
         "name": "Muziek",
         "slug": "muziek",
         "sounds": [
@@ -16,33 +88,38 @@
             },
             {
                 "id": 3,
+                "name": "LINKS RECHTS",
+                "file": "LINKS RECHTS.mp3"
+            },
+            {
+                "id": 4,
                 "name": "SUPERGEIL",
                 "file": "SUPERGEIL.mp3"
             },
             {
-                "id": 4,
+                "id": 5,
                 "name": "TSUNAMI",
                 "file": "TSUNAMI.mp3"
             },
             {
-                "id": 5,
+                "id": 6,
                 "name": "TURBO",
                 "file": "TURBO.mp3"
             },
             {
-                "id": 6,
+                "id": 7,
                 "name": "VOGELTJESDANS",
                 "file": "VOGELTJESDANS.mp3"
             },
             {
-                "id": 7,
+                "id": 8,
                 "name": "YMCA",
                 "file": "YMCA.mp3"
             }
         ]
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Polka",
         "slug": "polka",
         "sounds": [
@@ -54,7 +131,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Sound Effects",
         "slug": "sound-effects",
         "sounds": [
@@ -211,7 +288,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Spraak",
         "slug": "spraak",
         "sounds": [

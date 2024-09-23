@@ -1,21 +1,26 @@
 [
     {
-        "id": 1,
+        "id": 2,
+        "name": "Favorieten",
+        "slug": "favorieten"
+    },
+    {
+        "id": 3,
         "name": "Muziek",
         "slug": "muziek"
     },
     {
-        "id": 2,
+        "id": 4,
         "name": "Polka",
         "slug": "polka"
     },
     {
-        "id": 3,
+        "id": 5,
         "name": "Sound Effects",
         "slug": "sound-effects"
     },
     {
-        "id": 4,
+        "id": 6,
         "name": "Spraak",
         "slug": "spraak"
     }
