@@ -7,31 +7,32 @@
           {{ category?.sounds.length ? 'Klik op een geluid om deze af te spelen' : 'Geen geluiden gevonden in deze categorie' }}
         </p>
       </div>
-      <!--      <UButton-->
-      <!--        class="h-max"-->
-      <!--        icon="i-heroicons-plus"-->
-      <!--        color="black"-->
-      <!--        sr-only="Voeg een sound effect toe"-->
-      <!--        :disabled="true"-->
-      <!--      />-->
     </div>
 
     <div class="grid grid-cols-2 gap-4">
       <UCard
-        v-for="(sound, index) in category?.sounds"
-        :key="index"
-        :class="[getColor(index), (isPlaying && playingSound?.name !== sound.name ? 'cursor-not-allowed' : 'cursor-pointer')]"
-        @click="playSound(sound)"
+          v-for="(sound, index) in category?.sounds"
+          :key="index"
+          :class="[getColor(index), 'cursor-pointer']"
       >
         <div class="w-full flex flex-col items-center justify-center">
           <div class="relative">
-            <UButton
-              class="rounded-full"
-              color="black"
-              icon="i-heroicons-play"
-              :disabled="isPlaying && playingSound?.name !== sound.name"
-              @click="playSound(sound)"
-            />
+            <transition name="fade">
+              <UButton
+                  v-if="playingSound?.name !== sound.name"
+                  class="rounded-full"
+                  color="black"
+                  icon="i-heroicons-play"
+                  @click="playSound(sound)"
+              />
+              <UButton
+                  v-else
+                  class="rounded-full"
+                  color="black"
+                  icon="i-heroicons-stop"
+                  @click="stopSound"
+              />
+            </transition>
             <div v-if="playingSound?.name === sound.name" class="absolute inset-0 flex items-center justify-center">
               <div class="rounded-full border-4 border-black"
                    :style="{ width: '100%', height: '100%', clipPath: `inset(${100 - progress}% 0 0 0)` }"></div>
@@ -55,27 +56,53 @@ type Sound = {
 
 const route = useRoute();
 const category = computed(() => data.find(cat => cat.slug === route.params.category));
+
 const playingSound = ref<Sound | null>(null);
 const progress = ref(0);
 
+let currentAudio: HTMLAudioElement | null = null;
+
 function playSound(sound: Sound) {
-  if (playingSound.value) return;
+  if (playingSound.value) {
+    stopCurrentAudio(() => {
+      startPlayingSound(sound);
+    });
+  } else {
+    startPlayingSound(sound);
+  }
+}
 
+function startPlayingSound(sound: Sound) {
   playingSound.value = sound;
-  const audio = new Audio(`/sounds/${category.value?.name}/${sound.file}`);
-  audio.play();
+  currentAudio = new Audio(`/sounds/${category.value?.name}/${sound.file}`);
+  currentAudio.play();
 
-  audio.addEventListener('timeupdate', () => {
-    progress.value = (audio.currentTime / audio.duration) * 100;
+  currentAudio.addEventListener('timeupdate', () => {
+    progress.value = (currentAudio!.currentTime / currentAudio!.duration) * 100;
   });
 
-  audio.addEventListener('ended', () => {
+  currentAudio.addEventListener('ended', () => {
     playingSound.value = null;
     progress.value = 0;
   });
 }
 
-const isPlaying = computed(() => playingSound.value !== null);
+function stopSound() {
+  if (!playingSound.value) return;
+
+  stopCurrentAudio(() => {
+    playingSound.value = null;
+    progress.value = 0;
+  });
+}
+
+function stopCurrentAudio(callback: () => void) {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    callback();
+  }
+}
 
 const colors = ['!bg-[#b18cff]', '!bg-[#adf7d7]', '!bg-[#6eb6ff]', '!bg-[#ffabab]'];
 
